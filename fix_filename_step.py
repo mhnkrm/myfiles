@@ -35,7 +35,7 @@ class rename_files():
         step_number = 1
         test_contents = ""
         for contents in file_content:
-            if "<Name>" in contents:
+            if "Name" in contents:
                 contents_replace = "<Name>{}</Name>".format(file_name)
                 contents_test = re.sub('<\w+>.*</\w+>',contents_replace,contents)
                 test_contents += contents_test
